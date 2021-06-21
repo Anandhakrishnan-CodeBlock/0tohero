@@ -1,0 +1,156 @@
+print('Welcome to python')
+
+s = 'abcdefgh'
+print(s[::-1])
+
+alp = 'abc'
+print(alp[1:])
+
+sa = ['a','b','c','d','e','f','g','h']
+sa.reverse()
+print(sa)
+set([1,1,2,3])
+
+
+for i in range(len(test_str)):
+    if not idx % 2 :
+       res = res + test_str[idx].upper()
+    else:
+       res = res + test_str[idx].lower()
+
+
+-------------------------------------------------------------
+
+lst_1 = [1, 2, 3]
+lst_2 = [4, 5, 6]
+lst_3 = [7, 8, 9]
+
+matrix = [lst_1, lst_2, lst_3]
+
+first_col = [row[2] for row in matrix]
+print(first_col)
+
+
+
+my_dict = {'key1':1,'key2':2,'key3':3, 'matrix':matrix}
+
+print(my_dict)
+print(my_dict.keys())
+print(my_dict.items())
+
+t = (1, 2, 3, 'one', 'two', 4)
+
+print(t.count("one"))
+
+x = set()
+x.add(1)
+x.add(2)
+list1 = [1, 1, 2, 2, 3, 4, 5, 6, 1, 1]
+list2 = set(list1)
+print(list2)
+
+my_file = open('test.txt', 'w+')
+print(my_file.read())
+my_file.write('This is a new line')
+my_file.write('\nThis is text being appended to test.txt')
+my_file.write('\nAnd another line here.')
+my_file.close()
+for line in open('test.txt'):
+    print(line)
+
+
+--------------------------------------------------------------------------------------------------
+d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+print(d.items())
+
+list3 = [1,2,[3,4,'hello']]
+print(list3[2][2])
+
+
+d = {'simple_key':'hello'}
+print(d['simple_key'])
+
+d = {'k1':{'k2':'hello'}}
+print(d['k1']['k2'])
+
+d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+print(d['k1'][0]['nest_key'][1][0])
+
+d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
+print(d['k1'][2]['k2'][1]['tough'][2][0])
+
+l_one = [1,2,[3,4]]
+l_two = [1,2,{'k1':4}]
+print(l_one[2][1] == l_two[2]['k1'])
+--------------------------------------------------------------------------------------
+x = True
+
+if x:
+    print('x was True!')
+else:
+    print('I will be printed in any case where x is not true')
+
+loc = 'Bank'
+
+if loc == 'Auto Shop':
+    print('Welcome to the Auto Shop!')
+elif loc == 'Bank':
+    print('Welcome to the bank!')
+else:
+    print('Where are you?')
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#for num in list1:
+ #   print(num)
+
+
+list2 = [(2,4),(6,8),(10,12)]
+for t1, t2 in list2:
+    print(t1, t2)
+----------------------------------------------------------------------------------------------------------
+X | O | X
+O | O | X
+X | X | O
+
+------------------------------------------------------------------------------------------------------------
+suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
+ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace')
+values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
+            'Nine':9, 'Ten':10, 'Jack':11, 'Queen':12, 'King':13, 'Ace':14}
+
+items = list(cards.items())
+shuffle(items)
+length = len(items)
+middle_index = length//2
+first_half = items[:middle_index]
+print(len(first_half))
+second_half = items[middle_index:]
+print(len(second_half))
+
+class Start():
+    print('Initial')
+class Cards():
+    print('Cards')
+class Deak():
+    print('Deak')
+class Player():
+    print('player')
+class Game_Logic():
+    print('Logic')
+
+
+    'H-Two': 2, 'H-Three': 3, 'H-Four': 4, 'H-Five': 5, 'H-Six': 6, 'H-Seven': 7, 'H-Eight': 8,
+    'H-Nine': 9, 'H-Ten': 10, 'H-Jack': 11, 'H-Queen': 12, 'H-King': 13, 'H-Ace': 14,
+    'D-Two': 2, 'D-Three': 3, 'D-Four': 4, 'D-Five': 5, 'D-Six': 6, 'D-Seven': 7, 'D-Eight': 8,
+    'D-Nine': 9, 'D-Ten': 10, 'D-Jack': 11, 'D-Queen': 12, 'D-King': 13, 'D-Ace': 14,
+    'S-Two': 2, 'S-Three': 3, 'S-Four': 4, 'S-Five': 5, 'S-Six': 6, 'S-Seven': 7, 'S-Eight': 8,
+    'S-Nine': 9, 'S-Ten': 10, 'S-Jack': 11, 'S-Queen': 12, 'S-King': 13, 'S-Ace': 14,
+    'C-Two': 2, 'C-Three': 3, 'C-Four': 4, 'C-Five': 5, 'C-Six': 6, 'C-Seven': 7, 'C-Eight': 8,
+    'C-Nine': 9, 'C-Ten': 10, 'C-Jack': 11, 'C-Queen': 12, 'C-King': 13, 'C-Ace': 14
+
+
+def factor(n):
+    if n==1 or n==0:
+        return 1
+    else:
+        n * factor(n-1)
